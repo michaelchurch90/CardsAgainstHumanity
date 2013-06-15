@@ -1,0 +1,40 @@
+server
+-read server info from file
+-message queue to hanle requests
+--will need to define possible actions with headers
+
+-listen for clients
+-- new games
+--join existing games (from invites etc)
+
+-update rounds
+--keep track of whose turn it is
+--which cards have been played
+--circular linked list would be awesome for this
+--distribute new cards from deck on round
+
+-need to create a deck of cards that can easily be added to
+--use a text file (xml maybe or possible some sort of sql)
+
+-save current games and other information in sql
+--this may include the deck of cards
+--player information
+--turn information
+--anything that keeps track of a state of a game
+
+
+Client
+-start new game
+-join existing game
+--this could be accepting an invite
+--could also be joining a public game
+--searching for games?
+
+-existing games
+--make actions on current game (submit/choose card)
+--look at cards
+--some form of chat
+
+-use message queue
+--find out if it is your turn
+--find out which cards have been sent to you
